@@ -60,8 +60,11 @@
 }
 
   /* ── Layout ── */
-  .container { max-width: 1080px; margin: 0 auto; padding: 0 5%; }
-  section { padding: 100px 0; }
+  .container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
 
   /* ── Hero ── */
   #hero {
@@ -73,13 +76,13 @@
       radial-gradient(ellipse 400px 400px at 10% 80%, rgba(160,157,232,0.06) 0%, transparent 60%),
       var(--bg);
   }
-  .hero-inner {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    gap: 60px;
-    width: 100%;
-  }
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+}
   .hero-eyebrow {
     display: inline-flex; align-items: center; gap: 8px;
     background: var(--accent-soft);
@@ -102,25 +105,22 @@
     animation: pulse 2s ease-in-out infinite;
   }
   @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.8)} }
-  h1 {
-    font-family: 'DM Serif Display', serif;
-    font-size: clamp(2.8rem, 5vw, 4.2rem);
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    color: var(--text-primary);
-    margin-bottom: 20px;
-    opacity: 0; animation: fadeUp 0.7s ease forwards 0.2s;
-  }
+h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(2.8rem, 5vw, 4.2rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
   h1 em { font-style: italic; color: var(--accent); }
-  .hero-sub {
-    font-size: 1.05rem;
-    color: var(--text-secondary);
-    max-width: 520px;
-    font-weight: 400;
-    line-height: 1.75;
-    margin-bottom: 36px;
-    opacity: 0; animation: fadeUp 0.7s ease forwards 0.35s;
-  }
+ .hero-sub {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 520px;
+  line-height: 1.75;
+  margin-bottom: 36px;
+}
   .hero-tags {
     display: flex; flex-wrap: wrap; gap: 8px;
     margin-bottom: 40px;
@@ -168,22 +168,15 @@
   .hero-visual {
     opacity: 0; animation: fadeIn 1s ease forwards 0.6s;
   }
-  .avatar-ring {
-    width: 240px; height: 240px;
-    border-radius: 50%;
-    border: 2px solid rgba(91,82,232,0.2);
-    display: flex; align-items: center; justify-content: center;
-    position: relative;
-  }
-  .avatar-img {
-    width: 214px;
-    height: 214px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center top;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.14);
-    transition: transform 0.3s ease;
-  }
+.avatar-ring {
+  width: 260px;
+  height: 260px;
+}
+
+.avatar-img {
+  width: 230px;
+  height: 230px;
+}
   .avatar-img:hover {
     transform: scale(1.03);
   }
