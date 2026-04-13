@@ -52,6 +52,12 @@
   }
   .nav-links a:hover { color: var(--accent); }
 
+.nav-links a.active {
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 6px;
+}
+
   /* ── Layout ── */
   .container { max-width: 1080px; margin: 0 auto; padding: 0 5%; }
   section { padding: 100px 0; }
