@@ -15,10 +15,9 @@ const setActiveLink = () => {
   let currentSection = '';
 
   sections.forEach((section) => {
-    const sectionTop = section.offsetTop - 120;
-    const sectionHeight = section.offsetHeight;
-
-    if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+    const sectionTop = section.getBoundingClientRect().top;
+    
+    if (sectionTop <= 150 && sectionTop >= -section.offsetHeight + 150) {
       currentSection = section.getAttribute('id');
     }
   });
