@@ -1,3 +1,4 @@
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((e) => {
     if (e.isIntersecting) {
@@ -15,9 +16,10 @@ const setActiveLink = () => {
   let currentSection = '';
 
   sections.forEach((section) => {
-    const sectionTop = section.getBoundingClientRect().top;
-    
-    if (sectionTop <= 150 && sectionTop >= -section.offsetHeight + 150) {
+    const sectionTop = section.offsetTop - 120;
+    const sectionHeight = section.offsetHeight;
+
+    if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
       currentSection = section.getAttribute('id');
     }
   });
