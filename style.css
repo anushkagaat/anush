@@ -76,7 +76,7 @@
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
-    gap: 60px;
+    gap: 100px;
     width: 100%;
   }
   .hero-eyebrow {
@@ -103,7 +103,7 @@
   @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.8)} }
   h1 {
     font-family: 'DM Serif Display', serif;
-    font-size: clamp(2.8rem, 5vw, 4.2rem);
+    font-size: clamp(3.5rem, 6vw, 5.5rem)
     line-height: 1.1;
     letter-spacing: -0.02em;
     color: var(--text-primary);
@@ -112,9 +112,9 @@
   }
   h1 em { font-style: italic; color: var(--accent); }
   .hero-sub {
-    font-size: 1.05rem;
-    color: var(--text-secondary);
-    max-width: 520px;
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+    max-width: 600px;
     font-weight: 400;
     line-height: 1.75;
     margin-bottom: 36px;
@@ -168,15 +168,15 @@
     opacity: 0; animation: fadeIn 1s ease forwards 0.6s;
   }
   .avatar-ring {
-    width: 240px; height: 240px;
+    width: 300px; height: 300px;
     border-radius: 50%;
     border: 2px solid rgba(91,82,232,0.2);
     display: flex; align-items: center; justify-content: center;
     position: relative;
   }
   .avatar-img {
-    width: 214px;
-    height: 214px;
+    width: 270px;
+    height: 270px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center top;
