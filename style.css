@@ -101,14 +101,14 @@
     animation: pulse 2s ease-in-out infinite;
   }
   @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.8)} }
-  h1 {
-    font-family: 'DM Serif Display', serif;
-    font-size: clamp(3.5rem, 6vw, 5.5rem)
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    color: var(--text-primary);
-    margin-bottom: 20px;
-    opacity: 0; animation: fadeUp 0.7s ease forwards 0.2s;
+ h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(3.8rem, 6.5vw, 5.8rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  opacity: 0; animation: fadeUp 0.7s ease forwards 0.2s;
   }
   h1 em { font-style: italic; color: var(--accent); }
   .hero-sub {
